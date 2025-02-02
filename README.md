@@ -4,7 +4,7 @@ Make videos match your rhythm.
 
 ## 🚀 Features
 - Adjust video speed from **0.5x to 4x**
-- Works on **YouTube, Netflix, and most websites**
+- Works on **Youtube**
 - Simple and user-friendly UI
 
 ## 📌 Installation
