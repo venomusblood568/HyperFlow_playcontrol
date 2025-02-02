@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HyperFlow</title>
+    <style>
+      body {
+        font-family: "Courier New", Courier, monospace;
+        padding: 10px;
+        width: 200px;
+        background-color: #2b2d42;
+        font-size: 15px;
+        color: white;
+        text-align: center;
+      }
+
+      input {
+        width: 100%;
+        margin-top: 10px;
+      }
+
+      /* Style for the slider */
+      input[type="range"] {
+        -webkit-appearance: none;
+        width: 100%;
+        height: 8px;
+        border-radius: 5px;
+        background: #8d99ae; /* Light teal color */
+        outline: none;
+        opacity: 0.9;
+        transition: opacity 0.2s;
+      }
+
+      input[type="range"]:hover {
+        opacity: 1;
+      }
+
+      /* Custom slider thumb */
+      input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 16px;
+        height: 16px;
+        background: #edf2f4; /* Gold thumb */
+        border-radius: 50%;
+        cursor: pointer;
+        box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
+      }
+
+      input[type="range"]::-moz-range-thumb {
+        width: 16px;
+        height: 16px;
+        background: #f1c40f;
+        border-radius: 50%;
+        cursor: pointer;
+        box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <h5>Make videos match your rhythm.</h5>
+    <input
+      type="range"
+      id="speedControl"
+      min="0.1"
+      max="4.0"
+      step="0.1"
+      value="1"
+    />
+    <p>Speed: <span id="speedValue">1x</span></p>
+    <script src="popup.js"></script>
+  </body>
+</html>

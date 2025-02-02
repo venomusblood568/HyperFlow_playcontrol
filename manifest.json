@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "HyperFlow",
+  "version": "1.0",
+  "description": "Make videos match your rhythm.",
+  "permissions": ["activeTab", "storage"],
+  "host_permissions": ["*://*/*"],
+  "background": {
+    "service_worker": "bg.js"
+  },
+  "icons": {
+    "48": "/headphones.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "/headphones.png"
+  }
+}
